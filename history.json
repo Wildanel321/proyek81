@@ -1,0 +1,262 @@
+{
+  "243417674199115@lid": [
+    {
+      "role": "user",
+      "content": "Test"
+    },
+    {
+      "role": "assistant",
+      "content": "Saya siap membantu dengan pertanyaan atau masalah Anda seputar IoT dan pemrograman. Silakan tanyakan apa yang Anda ingin ketahui atau butuhkan bantuan."
+    }
+  ],
+  "120363407742423227@g.us": [
+    {
+      "role": "user",
+      "content": "@111313405620443"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Jika Anda memiliki pertanyaan tentang Internet of Things (IoT) atau pemrograman, saya siap membantu. Silakan tanyakan pertanyaan Anda!"
+    },
+    {
+      "role": "user",
+      "content": "Hi! Pesanmu sudah masuk 🚀\nKalau belum dibales…\nkemungkinan atmin sedang turu, makan, atau pura-pura sibuk 😌\nTapi tenang, pasti dibales.\nAdmin bukan mantan—nggak ghosting 😉\nTunggu aja \nJangan spam telpon \nSpam blok"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak bisa menjawab pesan yang tidak terkait dengan topik IoT atau pemrograman. Jika Anda memiliki pertanyaan tentang ESP32, Arduino, Raspberry Pi, sensor, aktuator, MQTT, LoRa, atau bahasa pemrograman seperti C/C++, Python, atau JavaScript, saya siap membantu. Silakan tanyakan pertanyaan Anda!"
+    },
+    {
+      "role": "user",
+      "content": "@111313405620443 hai"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Jika Anda memiliki pertanyaan tentang Internet of Things (IoT) atau pemrograman, saya siap membantu. Silakan tanyakan pertanyaan Anda! Misalnya, apa yang ingin Anda ketahui tentang ESP32, Arduino, atau Raspberry Pi? Atau mungkin Anda memiliki pertanyaan tentang cara menggunakan sensor atau aktuator tertentu? Saya siap membantu!"
+    },
+    {
+      "role": "user",
+      "content": "Kelihatan ga text yang dikirim sama @111313405620443"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Pesan yang dikirimkan oleh @111313405620443 tidak terkait dengan topik IoT atau pemrograman. Jika Anda ingin membahas tentang IoT atau coding, saya siap membantu. Silakan tanyakan pertanyaan Anda!"
+    },
+    {
+      "role": "user",
+      "content": "@111313405620443 buatkan skema blynk ke esp32 dan mq2"
+    },
+    {
+      "role": "assistant",
+      "content": "Berikut adalah contoh skema untuk menghubungkan ESP32 dengan sensor MQ2 dan mengirimkan data ke aplikasi Blynk:\n\n**Komponen yang dibutuhkan:**\n\n* ESP32 (misalnya ESP32 DevKitC)\n* Sensor MQ2 (gas detector)\n* Resistor 4,7 kΩ\n* Breadboard\n* Kabel jumper\n\n**Skema:**\n\n1. Hubungkan VCC sensor MQ2 ke pin 3,3V ESP32\n2. Hubungkan GND sensor MQ2 ke pin GND ESP32\n3. Hubungkan pin OUT sensor MQ2 ke pin analóg ESP32 (misalnya pin A0)\n4. Hubungkan resistor 4,7 kΩ antara pin OUT sensor MQ2 dan pin GND ESP32\n\n**Kode program:**\n\n```cpp\n#include <WiFi.h>\n#include <BlynkSimpleEsp32.h>\n\n// Token Blynk\nchar auth[] = \"YOUR_BLYNK_TOKEN\";\n\n// Nama WiFi dan password\nchar ssid[] = \"YOUR_WIFI_SSID\";\nchar pass[] = \"YOUR_WIFI_PASSWORD\";\n\n// Pin untuk sensor MQ2\nconst int mq2Pin = 0; // Pin A0\n\nvoid setup() {\n  Serial.begin(115200);\n  Blynk.begin(auth, ssid, pass);\n\n  // Inisialisasi pin sensor MQ2\n  pinMode(mq2Pin, INPUT);\n}\n\nvoid loop() {\n  Blynk.run();\n\n  // Baca nilai sensor MQ2\n  int mq2Value = analogRead(mq2Pin);\n\n  // Kirim nilai sensor MQ2 ke aplikasi Blynk\n  Blynk.virtualWrite(V0, mq2Value);\n\n  delay(1000);\n}\n```\n\n**Cara kerja:**\n\n1. ESP32 terhubung ke WiFi dan aplikasi Blynk.\n2. Sensor MQ2 membaca nilai gas dan mengirimkannya ke pin analóg ESP32.\n3. ESP32 membaca nilai sensor MQ2 dan mengirimkannya ke aplikasi Blynk.\n4. Aplikasi Blynk menampilkan nilai sensor MQ2 pada dashboard.\n\n**Catatan:**\n\n* Pastikan Anda telah menginstal library BlynkSimpleEsp32 dan WiFi pada IDE Arduino.\n* Ganti `YOUR_BLYNK_TOKEN`, `YOUR_WIFI_SSID`, dan `YOUR_WIFI_PASSWORD` dengan nilai yang sesuai.\n* Pastikan ESP32 dan sensor MQ2 terhubung dengan benar.\n* Anda dapat mengatur threshold untuk sensor MQ2 untuk mengirimkan notifikasi ke aplikasi Blynk jika nilai gas melebihi batas tertentu."
+    },
+    {
+      "role": "user",
+      "content": "test"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Jika Anda memiliki pertanyaan tentang Internet of Things (IoT) atau pemrograman, saya siap membantu. Silakan tanyakan pertanyaan Anda!\n\nJika Anda ingin melakukan tes, silakan berikan informasi lebih lanjut tentang apa yang ingin Anda tes. Misalnya, apakah Anda ingin melakukan tes pada kode program, skema elektronika, atau sesuatu yang lain? Saya siap membantu!"
+    },
+    {
+      "role": "user",
+      "content": "dah aman tuh bot nya tapi kalau malam pasti mati soalnya ga ada server"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, sepertinya Anda sedang menghadapi masalah dengan bot yang tidak dapat berjalan 24/7 karena tidak ada server yang aktif pada malam hari.\n\nUntuk mengatasi masalah ini, Anda memiliki beberapa opsi:\n\n1. **Gunakan layanan cloud**: Anda dapat menggunakan layanan cloud seperti AWS, Google Cloud, atau Microsoft Azure untuk menjalankan bot Anda. Layanan cloud ini memiliki server yang aktif 24/7, sehingga bot Anda dapat berjalan tanpa gangguan.\n2. **Gunakan VPS (Virtual Private Server)**: Anda dapat menyewa VPS yang dapat diakses 24/7. VPS ini dapat digunakan untuk menjalankan bot Anda, sehingga Anda dapat memantau dan mengontrolnya kapan saja.\n3. **Gunakan Raspberry Pi atau ESP32 sebagai server**: Jika Anda memiliki Raspberry Pi atau ESP32, Anda dapat menggunakannya sebagai server untuk menjalankan bot Anda. Perangkat ini dapat diaktifkan 24/7 dan dapat diakses secara remote.\n4. **Gunakan platform IoT**: Anda dapat menggunakan platform IoT seperti Blynk, Adafruit IO, atau ThingSpeak untuk menjalankan bot Anda. Platform ini memiliki server yang aktif 24/7 dan dapat diakses secara remote.\n\nJika Anda memilih untuk menggunakan salah satu opsi di atas, pastikan Anda telah mempertimbangkan biaya, keamanan, dan kinerja server sebelum membuat keputusan.\n\nJika Anda memiliki pertanyaan lebih lanjut, silakan tanyakan!"
+    }
+  ],
+  "6283138775718@s.whatsapp.net": [
+    {
+      "role": "user",
+      "content": "aku bisa ga untuk bikin esp32 gundam"
+    },
+    {
+      "role": "assistant",
+      "content": "ESP32 Gundam? Itu proyek yang sangat keren!\n\nTentu saja, kamu bisa membuat proyek seperti itu. ESP32 dapat digunakan sebagai otak dari proyek Gundam kamu, mengontrol berbagai aktuator seperti servo, motor, dan LED.\n\nBerikut beberapa komponen yang mungkin kamu butuhkan untuk membuat ESP32 Gundam:\n\n* ESP32 (tentu saja!)\n* Servo motor untuk mengontrol gerakan Gundam\n* Motor DC untuk mengontrol kaki atau roda Gundam\n* LED untuk mengontrol pencahayaan Gundam\n* Baterai untuk mengaliri daya ke ESP32 dan aktuator\n* Breadboard dan jumper wire untuk menghubungkan komponen\n\nUntuk membuat proyek ini, kamu perlu memiliki kemampuan dasar dalam pemrograman C++ dan Arduino IDE. Kamu juga perlu memahami konsep dasar tentang penggunaan sensor dan aktuator.\n\nBerikut contoh kode yang bisa kamu gunakan sebagai awal untuk membuat ESP32 Gundam:\n```cpp\n// Import library yang dibutuhkan\n#include <WiFi.h>\n#include <Servo.h>\n\n// Definisi variabel\nconst int servoPin = 12; // Pin untuk servo\nconst int motorPin = 13; // Pin untuk motor\nconst int ledPin = 14; // Pin untuk LED\n\n// Buat objek servo\nServo servo;\n\nvoid setup() {\n  // Inisialisasi servo\n  servo.attach(servoPin);\n  \n  // Inisialisasi motor\n  pinMode(motorPin, OUTPUT);\n  \n  // Inisialisasi LED\n  pinMode(ledPin, OUTPUT);\n}\n\nvoid loop() {\n  // Kontrol servo\n  servo.write(90); // Atur servo ke posisi 90 derajat\n  \n  // Kontrol motor\n  digitalWrite(motorPin, HIGH); // Nyalakan motor\n  \n  // Kontrol LED\n  digitalWrite(ledPin, HIGH); // Nyalakan LED\n  \n  delay(1000);\n  \n  // Matikan motor dan LED\n  digitalWrite(motorPin, LOW);\n  digitalWrite(ledPin, LOW);\n  \n  delay(1000);\n}\n```\nNamun, perlu diingat bahwa kode di atas hanya sebagai contoh dan perlu diadaptasi dengan kebutuhan proyek kamu.\n\nSebelum memulai, aku ingin tahu:\n\n* Apa yang kamu ingin lakukan dengan Gundam ESP32 kamu? (misalnya, membuatnya berjalan, berputar, atau berinteraksi dengan lingkungan)\n* Apa jenis aktuator yang kamu ingin gunakan? (misalnya, servo, motor, atau lainnya)\n* Apa jenis sensor yang kamu ingin gunakan? (misalnya, ultrasonic, infrared, atau lainnya)\n\nDengan mengetahui jawaban dari pertanyaan-pertanyaan tersebut, aku dapat membantu kamu lebih baik dalam membuat proyek ESP32 Gundam kamu."
+    },
+    {
+      "role": "user",
+      "content": "halo"
+    },
+    {
+      "role": "assistant",
+      "content": "Halo! Selamat datang kembali. Apakah kamu masih ingin membahas tentang proyek ESP32 Gundam atau memiliki pertanyaan baru tentang IoT atau pemrograman? Aku siap membantu!"
+    },
+    {
+      "role": "user",
+      "content": "test"
+    },
+    {
+      "role": "assistant",
+      "content": "Test berhasil! Jika kamu memiliki pertanyaan atau memerlukan bantuan tentang IoT atau pemrograman, jangan ragu untuk bertanya. Aku siap membantu!"
+    }
+  ],
+  "120363255596907868@newsletter": [
+    {
+      "role": "user",
+      "content": "*Gunakan waktu luangmu untuk bermuhasabah atas apa yang telah kau lakukan sepanjang hari. Perbaiki niat yang melenceng dan syukuri setiap keberhasilan dalam berbuat baik.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding."
+    },
+    {
+      "role": "user",
+      "content": "*Gunakan waktu luangmu untuk bermuhasabah atas apa yang telah kau lakukan sepanjang hari. Perbaiki niat yang melenceng dan syukuri setiap keberhasilan dalam berbuat baik.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding."
+    },
+    {
+      "role": "user",
+      "content": "*Gunakan waktu luangmu untuk bermuhasabah atas apa yang telah kau lakukan sepanjang hari. Perbaiki niat yang melenceng dan syukuri setiap keberhasilan dalam berbuat baik.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding."
+    },
+    {
+      "role": "user",
+      "content": "*Saat jalan di depanmu terlihat gelap, percayalah bahwa Allah adalah cahaya bagi langit dan bumi. Teruslah berjalan dengan iman sebagai satu-satunya lentera di tanganmu.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding."
+    },
+    {
+      "role": "user",
+      "content": "*Saat jalan di depanmu terlihat gelap, percayalah bahwa Allah adalah cahaya bagi langit dan bumi. Teruslah berjalan dengan iman sebagai satu-satunya lentera di tanganmu.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding."
+    },
+    {
+      "role": "user",
+      "content": "*Saat jalan di depanmu terlihat gelap, percayalah bahwa Allah adalah cahaya bagi langit dan bumi. Teruslah berjalan dengan iman sebagai satu-satunya lentera di tanganmu.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Pertanyaan Anda tidak terkait dengan topik IoT atau pemrograman, jadi saya tidak dapat membantu. Jika Anda memiliki pertanyaan tentang IoT atau pemrograman, saya siap membantu."
+    },
+    {
+      "role": "user",
+      "content": "*Saat jalan di depanmu terlihat gelap, percayalah bahwa Allah adalah cahaya bagi langit dan bumi. Teruslah berjalan dengan iman sebagai satu-satunya lentera di tanganmu.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Pertanyaan Anda tidak terkait dengan topik IoT atau pemrograman, jadi saya tidak dapat membantu. Jika Anda memiliki pertanyaan tentang contoh kode program untuk ESP32, Arduino, atau lainnya, saya siap membantu. Atau jika Anda memiliki pertanyaan tentang cara menghubungkan sensor atau aktuator dengan mikrokontroller, saya juga siap membantu. Tolong berikan pertanyaan yang lebih spesifik tentang IoT atau pemrograman."
+    },
+    {
+      "role": "user",
+      "content": "*Ikhlas adalah ruh dalam setiap amal ibadah yang kita kerjakan. Tanpa ketulusan niat, perbuatan sebesar gunung pun hanya akan menjadi debu yang sia-sia.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Pertanyaan Anda tidak terkait dengan topik IoT atau pemrograman, jadi saya tidak dapat membantu. Jika Anda ingin belajar tentang cara menggunakan library MQTT dengan ESP32, atau tentang cara membuat dashboard IoT dengan Blynk, saya siap membantu. Atau jika Anda memiliki pertanyaan tentang cara mengoptimalkan kode program untuk mikrokontroller, saya juga siap membantu. Tolong berikan pertanyaan yang lebih spesifik tentang IoT atau pemrograman."
+    },
+    {
+      "role": "user",
+      "content": "*Ikhlas adalah ruh dalam setiap amal ibadah yang kita kerjakan. Tanpa ketulusan niat, perbuatan sebesar gunung pun hanya akan menjadi debu yang sia-sia.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak dapat membantu dengan pertanyaan yang tidak terkait dengan topik IoT atau pemrograman. Jika Anda memiliki pertanyaan tentang cara membuat proyek IoT dengan Raspberry Pi, atau tentang cara menggunakan bahasa pemrograman Python untuk mikrokontroller, saya siap membantu. Silakan bertanya tentang topik yang terkait dengan IoT atau pemrograman, dan saya akan berusaha memberikan jawaban yang tepat dan bermanfaat."
+    },
+    {
+      "role": "user",
+      "content": "*Ikhlas adalah ruh dalam setiap amal ibadah yang kita kerjakan. Tanpa ketulusan niat, perbuatan sebesar gunung pun hanya akan menjadi debu yang sia-sia.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak dapat membantu dengan pertanyaan yang tidak terkait dengan topik IoT atau pemrograman. Jika Anda ingin belajar tentang cara menggunakan sensor DHT11 dengan Arduino, atau tentang cara membuat aplikasi IoT dengan Node.js, saya siap membantu. Silakan bertanya tentang topik yang terkait dengan IoT atau pemrograman, dan saya akan berusaha memberikan jawaban yang tepat dan bermanfaat. IoT dan coding adalah fokus saya, jadi saya tidak dapat membantu dengan topik lain."
+    },
+    {
+      "role": "user",
+      "content": "*Ikhlas adalah ruh dalam setiap amal ibadah yang kita kerjakan. Tanpa ketulusan niat, perbuatan sebesar gunung pun hanya akan menjadi debu yang sia-sia.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Pertanyaan Anda tidak terkait dengan topik IoT atau pemrograman, jadi saya tidak dapat membantu. Jika Anda memiliki pertanyaan tentang cara menghubungkan ESP32 dengan WiFi, atau tentang cara menggunakan library I2C untuk mengakses sensor MPU6050, saya siap membantu. Silakan bertanya tentang topik yang terkait dengan IoT atau pemrograman, dan saya akan berusaha memberikan jawaban yang tepat dan bermanfaat. Saya tidak dapat membantu dengan topik lain, jadi tolong fokus pada IoT dan coding."
+    },
+    {
+      "role": "user",
+      "content": "*Ikhlas adalah ruh dalam setiap amal ibadah yang kita kerjakan. Tanpa ketulusan niat, perbuatan sebesar gunung pun hanya akan menjadi debu yang sia-sia.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak dapat membantu dengan pertanyaan yang tidak terkait dengan topik IoT atau pemrograman. Jika Anda ingin belajar tentang cara membuat proyek IoT dengan Raspberry Pi, atau tentang cara menggunakan bahasa pemrograman Python untuk mikrokontroller, saya siap membantu. Silakan bertanya tentang topik yang terkait dengan IoT atau pemrograman, dan saya akan berusaha memberikan jawaban yang tepat dan bermanfaat. Jika Anda memiliki pertanyaan tentang contoh kode program untuk ESP32, Arduino, atau lainnya, saya juga siap membantu. Tolong fokus pada topik IoT dan coding, dan saya akan melakukan yang terbaik untuk membantu Anda."
+    },
+    {
+      "role": "user",
+      "content": "*Ikhlas adalah ruh dalam setiap amal ibadah yang kita kerjakan. Tanpa ketulusan niat, perbuatan sebesar gunung pun hanya akan menjadi debu yang sia-sia.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak dapat membantu dengan pertanyaan yang tidak terkait dengan topik IoT atau pemrograman. Saya tidak dapat membahas tentang topik lain, termasuk agama, filsafat, atau lainnya. Jika Anda memiliki pertanyaan tentang cara menggunakan sensor ultrasonic dengan Arduino, atau tentang cara membuat aplikasi IoT dengan Node.js, saya siap membantu. Silakan bertanya tentang topik yang terkait dengan IoT atau pemrograman, dan saya akan berusaha memberikan jawaban yang tepat dan bermanfaat. IoT dan coding adalah fokus saya, jadi saya tidak dapat membantu dengan topik lain."
+    },
+    {
+      "role": "user",
+      "content": "*Ikhlas adalah ruh dalam setiap amal ibadah yang kita kerjakan. Tanpa ketulusan niat, perbuatan sebesar gunung pun hanya akan menjadi debu yang sia-sia.*"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak dapat membantu dengan pertanyaan yang tidak terkait dengan topik IoT atau pemrograman. Saya tidak dapat membahas tentang topik lain, termasuk motivasi, inspirasi, atau lainnya. Jika Anda ingin belajar tentang cara membuat proyek IoT dengan Raspberry Pi, atau tentang cara menggunakan bahasa pemrograman Python untuk mikrokontroller, saya siap membantu. Silakan bertanya tentang topik yang terkait dengan IoT atau pemrograman, dan saya akan berusaha memberikan jawaban yang tepat dan bermanfaat. Contoh pertanyaan yang dapat saya jawab adalah: \n* Bagaimana cara menggunakan sensor DHT11 dengan Arduino?\n* Bagaimana cara membuat aplikasi IoT dengan Node.js?\n* Bagaimana cara menghubungkan ESP32 dengan WiFi?\nSaya siap membantu dengan pertanyaan-pertanyaan seperti itu."
+    }
+  ],
+  "120363178244465701@g.us": [
+    {
+      "role": "user",
+      "content": "https://vt.tiktok.com/ZSHbt6FFP/"
+    },
+    {
+      "role": "user",
+      "content": "https://vt.tiktok.com/ZSHbt6FFP/"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak bisa membantu dengan konten video di platform lain seperti TikTok. Jika Anda memiliki pertanyaan tentang IoT atau pemrograman, saya dengan senang hati membantu. Silakan bertanya tentang topik seperti mikrokontroller, sensor, aktuator, MQTT, LoRa, atau bahasa pemrograman seperti C++, Python, atau JavaScript."
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak dapat membantu dengan konten atau link yang tidak terkait dengan IoT atau pemrograman. Jika Anda memiliki pertanyaan atau masalah seputar IoT atau coding, saya dengan senang hati akan membantu."
+    },
+    {
+      "role": "user",
+      "content": "Nyapo dihapus mas wildan"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak bisa membantu dengan topik yang tidak terkait dengan IoT atau pemrograman. Jika Anda memiliki pertanyaan atau masalah seputar mikrokontroller, sensor, aktuator, MQTT, LoRa, atau bahasa pemrograman seperti C++, Python, atau JavaScript, saya dengan senang hati akan membantu."
+    },
+    {
+      "role": "user",
+      "content": "maaf bot ku terlalu aktif"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Saya tidak bisa membantu dengan topik yang tidak terkait dengan IoT atau pemrograman. Jika Anda memiliki pertanyaan atau masalah seputar mikrokontroller, sensor, aktuator, MQTT, LoRa, atau bahasa pemrograman seperti C++, Python, atau JavaScript, saya dengan senang hati akan membantu. Mungkin Anda bisa memberikan contoh kode program atau menjelaskan masalah yang Anda hadapi dengan bot Anda? Saya bisa membantu Anda untuk menemukan solusi."
+    },
+    {
+      "role": "user",
+      "content": "test"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Jika Anda memiliki pertanyaan atau masalah seputar mikrokontroller, sensor, aktuator, MQTT, LoRa, atau bahasa pemrograman seperti C++, Python, atau JavaScript, saya dengan senang hati akan membantu. Silakan bertanya atau berbagi kode program Anda, dan saya akan melakukan yang terbaik untuk membantu Anda."
+    }
+  ],
+  "120363406106891925@newsletter": [
+    {
+      "role": "user",
+      "content": "https://palm-involved-adjustment-appliances.trycloudflare.com\n\nYtta ☝️😸"
+    },
+    {
+      "role": "assistant",
+      "content": "Maaf, saya hanya membantu IoT dan coding. Tautan yang Anda berikan tidak terkait dengan topik IoT atau pemrograman, dan sepertinya merupakan tautan yang tidak relevan dengan topik yang kita bahas. Jika Anda memiliki pertanyaan atau memerlukan bantuan tentang IoT atau coding, saya dengan senang hati akan membantu. ☺️"
+    }
+  ]
+}
